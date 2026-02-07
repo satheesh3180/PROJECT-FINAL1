@@ -1,9 +1,9 @@
 #PROJECT FINAL1
-📈 Advanced Time Series Forecasting with Transformer Attention
+ Advanced Time Series Forecasting with Transformer Attention
 
 (PROJECT FINAL1)
 
-🔍 Project Overview
+# Project Overview
 
 This project implements an advanced multivariate time series forecasting system using a custom Transformer-based encoder–decoder architecture with self-attention, built from scratch in PyTorch.
 
@@ -21,7 +21,7 @@ Model Interpretability
 
 Hyperparameter Optimization
 
-🎯 Key Objectives
+# Key Objectives
 
 Generate a complex multivariate time series dataset with correlated features
 
@@ -37,7 +37,7 @@ Compare results with SARIMAX baseline
 
 Interpret learned attention weights
 
-🧠 Dataset Description
+# Dataset Description
 
 The dataset is programmatically generated to simulate realistic temporal behavior such as:
 
@@ -52,8 +52,8 @@ volatility	Financial-style cumulative noise
 ✔ Cyclical
 ✔ Multivariate (5 features)
 
-🏗️ Model Architecture
-🔹 Transformer Encoder–Decoder
+# Model Architecture
+ #Transformer Encoder–Decoder
 
 Encoder:
 
@@ -69,7 +69,7 @@ Attention over encoder outputs
 
 Final dense layer for forecasting
 
-🔹 Key Design Choices
+# Key Design Choices
 
 Built using low-level PyTorch modules
 
@@ -79,7 +79,7 @@ Fully modular & PEP-8 compliant
 
 Attention weights extracted for interpretation
 
-🛡️ Padding & Masking
+# Padding & Masking
 
 Variable-length sequences are supported using:
 
@@ -93,7 +93,7 @@ Correct handling of missing timesteps
 
 No attention leakage into padded values
 
-🔎 Hyperparameter Optimization
+# Hyperparameter Optimization
 
 A Grid Search strategy is used to tune:
 
@@ -106,7 +106,7 @@ Learning Rate: 0.0005
 Sequence Length: 48
 Attention Heads: 4
 
-📊 Evaluation Metrics
+# Evaluation Metrics
 
 The following metrics are used for rigorous evaluation:
 
@@ -116,7 +116,7 @@ RMSE (Root Mean Squared Error)
 
 SMAPE (Symmetric Mean Absolute Percentage Error)
 
-📉 Baseline Model (Classical)
+# Baseline Model (Classical)
 
 To validate the effectiveness of deep learning, the model is compared against:
 
@@ -125,14 +125,14 @@ Implemented using the statsmodels library.
 
 This provides a fair and interpretable benchmark.
 
-🧪 Results Summary
+# Results Summary
 Model	MAE	RMSE
-Transformer + Attention	✅ Lower	✅ Lower
+Transformer + Attention	 Lower	 Lower
 SARIMAX	Higher	Higher
 
-➡️ The Transformer model consistently outperforms SARIMAX by capturing long-range dependencies and multivariate interactions.
+# The Transformer model consistently outperforms SARIMAX by capturing long-range dependencies and multivariate interactions.
 
-🔍 Attention Weight Interpretation
+# Attention Weight Interpretation
 
 Key insights from attention analysis:
 
@@ -142,9 +142,9 @@ Volatility becomes important during abrupt changes
 
 Attention dynamically shifts based on temporal context
 
-📌 This improves model transparency, which is often missing in deep learning models.
+# This improves model transparency, which is often missing in deep learning models.
 
-⚙️ Technologies Used
+# Technologies Used
 
 Python 3.x
 
@@ -168,7 +168,7 @@ PROJECT FINAL1/
 ├── baseline_sarimax.py
 └── README.md
 
-🏁 Conclusion
+# Conclusion
 
 This project demonstrates that Transformer-based attention models provide:
 
